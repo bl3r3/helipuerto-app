@@ -38,6 +38,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   object-fit: contain;
+  background-size: cover;
 }
 
 .bg-second-card {
@@ -46,6 +47,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   object-fit: contain;
+  background-size: cover;
 }
 
 .img-bg-second {
@@ -58,4 +60,12 @@ body {
 .swiper-button-next,
 .swiper-button-prev {
   color: var(--second-color) !important;
+}
+
+/* VIDEO */
+
+#myVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
