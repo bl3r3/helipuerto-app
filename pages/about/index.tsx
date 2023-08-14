@@ -75,7 +75,7 @@ const index = () => {
           </div>
         </div>
       </section>
-      <section className="w-full px-4 py-8 flex flex-col items-center justify-center gap-12 h-80 bg-white text-black">
+      {/* <section className="w-full px-4 py-8 flex flex-col items-center justify-center gap-12 h-80 bg-white text-black">
         <h3 className="text-3xl text-center text-title ">
           Testimoniales de nuestros clientes
         </h3>
@@ -150,7 +150,7 @@ const index = () => {
             </SwiperSlide>
           </Swiper>
         </div>
-      </section>
+      </section> */}
       <section className="w-full  flex flex-col items-center justify-center gap-4 h-72">
         <h4 className="text-title text-3xl">Quiero jugar</h4>
         <div className="flex gap-4">

@@ -1,14 +1,28 @@
 "use client";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import Image from "next/image";
 import Footer from "../components/ui/Footer";
 import Navbar from "../components/ui/Navbar";
-import Image from "next/image";
-import Placeholder from "../public/placeholder.svg";
 import "animate.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import PureModal from "react-pure-modal";
+import "react-pure-modal/dist/react-pure-modal.min.css";
+import Placeholder from "../public/placeholder.svg";
+import Modal1 from "../public/img/home/modal3.jpeg";
+import Nosotros1 from "../public/img/home/paint-11.jpeg";
+import Calavera from "../public/img/home/calavera.jpeg";
+import Cinta from "../public/img/home/cintaa.png";
+import Fuerza from "../public/img/home/fuerza.jpg";
+import Membresia from "../public/img/home/Membresia.png";
+import Canchas from "../public/img/home/canchas.jpeg";
+import Servicios from "../public/img/home/servicios.png";
+import CrossHair from "../public/img/home/crosshair.svg";
 
-export default function About() {
+export default function Page() {
+  const [modal, setModal] = useState(false);
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -45,7 +59,7 @@ export default function About() {
         </div>
         {/* </div> */}
       </section>
-      <section className="w-full px-4 py-8 flex flex-col gap-4 md:flex-row md:px-12 lg:px-24 text-content">
+      <section className="w-full px-4 py-8 flex flex-col gap-4 md:flex-row md:px-12 lg:px-24 text-content bg-black">
         <div
           className="w-full flex flex-col justify-center items-end bg-first-card border-2 rounded-md h-56 p-4 md:w-6/12 md:h-[270px]"
           data-aos="slide-right"
@@ -65,94 +79,87 @@ export default function About() {
           <p>Lun - Vie 08:00 am - 11:00 pm</p>
         </div>
       </section>
-      <section className="w-full px-4 py-8 flex flex-col items-center justify-center gap-2 bg-white h-fit text-black">
-        <h3 className="text-2xl text-black text-center text-title">
-          Sobre Nosotros
-        </h3>
+      <section className="w-full px-4 py-8 flex flex-col items-center justify-center gap-2 h-fit bg-black">
+        <h3 className="text-2xl text-center text-title">Sobre Nosotros</h3>
         <p className="text-xl text-content">Ven y diviertete con nosotros</p>
-        <div className="flex flex-col md:flex-row md:flex-wrap">
+        <div className="flex flex-col md:flex-row md:flex-wrap justify-center items-start relative">
+          <div className="absolute left-[-10px] top-[38%] " data-aos="fade-in">
+            <Image src={Calavera} width={200} height={200} alt="heli" />
+          </div>
           <div
-            className="w-full flex flex-col p-4 gap-2 items-center justify-center md:w-4/12   "
+            className="absolute right-[-100px] top-[0] opacity-20"
             data-aos="fade-in"
           >
-            <Image src={Placeholder} width={200} height={200} alt="heli" />
+            <Image src={CrossHair} width={200} height={200} alt="heli" />
+          </div>
+          <div
+            className="w-full flex flex-col p-4 gap-2 items-center justify-center md:w-4/12"
+            data-aos="fade-in"
+          >
+            <Image src={Nosotros1} width={200} height={200} alt="heli" />
             <h4 className="text-lg text-title">Que es el Helipuerto?</h4>
             <p className="text-sm text-center text-content">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Corporis, illum dolores veniam ex cumque soluta totam modi nam
-              sunt praesentium omnis ipsa quam quidem unde tempora maiores
-              temporibus voluptatibus consectetur.
+              Somo un centro de diversion donde desde los mas chicos hasta los
+              mas grandes pueden venir a divertirse y vivir una expereincia
+              unica. Tambien contamos con espacios para entrenamiento
+              profesional.
             </p>
           </div>
           <div
             className="w-full flex flex-col p-4 gap-2 items-center justify-center md:w-4/12"
             data-aos="fade-in"
           >
-            <Image src={Placeholder} width={200} height={200} alt="heli" />
-            <h4 className="text-lg text-title">Juega con nosotros</h4>
+            <Image src={Servicios} width={200} height={200} alt="heli" />
+            <h4 className="text-lg text-title">Servicios</h4>
             <p className="text-sm text-center text-content">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Corporis, illum dolores veniam ex cumque soluta totam modi nam
-              sunt praesentium omnis ipsa quam quidem unde tempora maiores
-              temporibus voluptatibus consectetur.
+              Contamos con servcios de entrenamiento profesional, alquiler de
+              cancha, alquiler de equipos y mucho mas.
+            </p>
+          </div>
+          <div
+            className="w-full flex flex-col p-4 gap-2 items-center justify-center md:w-4/12 z-10"
+            data-aos="fade-in"
+          >
+            <Image src={Canchas} width={200} height={200} alt="heli" />
+            <h4 className="text-lg text-title">Nuestras canchas</h4>
+            <p className="text-sm text-center text-content">
+              Contamos con la mejor cancha de la ciudad, con la mejor
+              iluminacion y el mejor cesped sintetico. Tambien poseeos canchas
+              de entrenamiento tactico para equipos profesionales.
             </p>
           </div>
           <div
             className="w-full flex flex-col p-4 gap-2 items-center justify-center md:w-4/12"
             data-aos="fade-in"
           >
-            <Image src={Placeholder} width={200} height={200} alt="heli" />
-            <h4 className="text-lg text-title">Como Agendar un Turno</h4>
+            <Image src={Fuerza} width={200} height={200} alt="heli" />
+            <h4 className="text-lg text-title">Equipamiento y armamento</h4>
             <p className="text-sm text-center text-content">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Corporis, illum dolores veniam ex cumque soluta totam modi nam
-              sunt praesentium omnis ipsa quam quidem unde tempora maiores
-              temporibus voluptatibus consectetur.
+              El helipuerto tiene el mas moderno equipamiento y armamento para
+              que vivas una experiencia real y unica en el campo de batalla.
             </p>
           </div>
           <div
             className="w-full flex flex-col p-4 gap-2 items-center justify-center md:w-4/12"
             data-aos="fade-in"
           >
-            <Image src={Placeholder} width={200} height={200} alt="heli" />
-            <h4 className="text-lg text-title">Quieres ser VIP?</h4>
+            <Image src={Membresia} width={200} height={200} alt="heli" />
+            <h4 className="text-lg text-title">Rangos y premios</h4>
             <p className="text-sm text-center text-content">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Corporis, illum dolores veniam ex cumque soluta totam modi nam
-              sunt praesentium omnis ipsa quam quidem unde tempora maiores
-              temporibus voluptatibus consectetur.
-            </p>
-          </div>
-          <div
-            className="w-full flex flex-col p-4 gap-2 items-center justify-center md:w-4/12"
-            data-aos="fade-in"
-          >
-            <Image src={Placeholder} width={200} height={200} alt="heli" />
-            <h4 className="text-lg text-title">Fotos y Videos</h4>
-            <p className="text-sm text-center text-content">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Corporis, illum dolores veniam ex cumque soluta totam modi nam
-              sunt praesentium omnis ipsa quam quidem unde tempora maiores
-              temporibus voluptatibus consectetur.
-            </p>
-          </div>
-          <div
-            className="w-full flex flex-col p-4 gap-2 items-center justify-center md:w-4/12"
-            data-aos="fade-in"
-          >
-            <Image src={Placeholder} width={200} height={200} alt="heli" />
-            <h4 className="text-lg text-title">Nuestros servicios</h4>
-            <p className="text-sm text-center text-content">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Corporis, illum dolores veniam ex cumque soluta totam modi nam
-              sunt praesentium omnis ipsa quam quidem unde tempora maiores
-              temporibus voluptatibus consectetur.
+              Contaras con un servicio de rangos y premios para que puedas
+              obtener una vez seas parte del HeliTeam y puedas obtener
+              beneficios, premios, descuentos y mucho mas.
             </p>
           </div>
         </div>
       </section>
-      <section className="w-full px-4 py-8 flex flex-col items-center justify-center gap-2 h-fit">
-        <h3 className="text-2xl text-center text-title">Nuestros Servicios</h3>
+      <section className="w-full bg-black px-4 py-8 flex flex-col items-center justify-center gap-2 h-fit relative">
+        <div className="absolute top-0 w-full">
+          <Image src={Cinta} alt="heli" />
+        </div>
+        <h3 className="text-2xl text-center text-title mt-12">
+          Nuestros Servicios
+        </h3>
         <p className="text-content text-xl">
           Escoge el que mejor se adapte a ti
         </p>
@@ -177,10 +184,9 @@ export default function About() {
             data-aos="fade-in"
           >
             <Image src={Placeholder} width={200} height={200} alt="heli" />
-            <h4 className="text-lg text-title">Servicio Uno</h4>
+            <h4 className="text-lg text-title">Cancha de Airsoft</h4>
             <p className="text-sm text-center text-content">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Corporis,
+              Nuestra cancha de airsoft es la mejor de la ciduad.
             </p>
             <button className="bg-lime-400 text-white px-4 py-2 rounded-md text-sm text-content">
               Mas info
@@ -197,13 +203,14 @@ export default function About() {
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Corporis,
             </p>
-            <button className="bg-lime-400 text-white px-4 py-2 rounded-md text-sm text-content">
-              Mas info
+
+            <button className="button" onClick={() => setModal(true)}>
+              Open simple modal
             </button>
           </div>
         </div>
       </section>
-      <section className="w-full px-4 img-bg-second h-[600px]">
+      <section className="w-full px-4 img-bg-second h-[460px] bg-black">
         <div className="container mx-auto px-4 h-full md:w-full">
           <div className="flex content-center items-center justify-center h-full flex-col">
             <h1 className="text-4xl" data-aos="slide-left">
@@ -229,6 +236,36 @@ export default function About() {
           </div>
         </div>
       </section>
+
+      <PureModal
+        header="Canchas de Airsoft"
+        isOpen={modal}
+        closeButton="x"
+        onClose={() => {
+          setModal(false);
+        }}
+        width="70%"
+      >
+        <div className="flex items-start justify-start gap-6">
+          <div className="w-1/2">
+            <Image src={Modal1} alt="heli" />
+          </div>
+          <div className="flex flex-col items-start w-1/2">
+            <p className="text-content text-md">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+              perspiciatis dicta pariatur accusamus delectus voluptates at ex
+              minus incidunt? Error adipisci praesentium excepturi totam
+              voluptas eligendi iste nesciunt. Eius, quasi!
+            </p>
+            <button
+              className="bg-lime-400 text-black text-xl p-2 text-center mt-4 rounded-mdtton"
+              onClick={() => setModal(false)}
+            >
+              <Link href="/services">Mas informacion</Link>
+            </button>
+          </div>
+        </div>
+      </PureModal>
       <Footer />
     </>
   );
