@@ -13,7 +13,7 @@ const index = () => {
   return (
     <>
       <Navbar />
-      <section className="w-full px-4 h-fit mt-20 bg-white text-black">
+      <section className="w-full px-4 h-fit mt-20">
         <div className="w-full flex flex-col items-center justify-center gap-2 h-fit ">
           <h1 className="text-title text-3xl mt-12">Nuestros Servicos</h1>
           <p className="text-content">Consulta por nuestros servicos</p>

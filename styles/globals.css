@@ -13,6 +13,7 @@ body {
   color: var(--third-color);
   background-color: var(--bg-color);
   font-family: "A4 speed";
+  overflow-x: hidden;
 }
 
 img {
@@ -57,15 +58,10 @@ img {
 }
 
 .img-bg-second {
-  background-image: url("../public/main-2.png");
+  background-image: url("../public/img/home/equipo.png");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  color: var(--second-color) !important;
 }
 
 /* VIDEO */
