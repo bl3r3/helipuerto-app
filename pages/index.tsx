@@ -18,7 +18,7 @@ import Membresia from "../public/img/home/Membresia.png";
 import Canchas from "../public/img/home/canchas.jpeg";
 import Servicios from "../public/img/home/servicios.png";
 import CrossHair from "../public/img/home/crosshair.svg";
-import Campo1 from "../public/img/home/Campo-de-Airsoft-España.jpg";
+import Campo1 from "../public/img/home/campo-2.jpg";
 import Campo2 from "../public/img/home/equipo_de_airsoft.jpg";
 import Equipo from "../public/img/home/modal2.webp";
 
