@@ -116,7 +116,7 @@ export default function Page() {
             data-aos="fade-in"
           >
             <Image src={Servicios} width={200} height={200} alt="heli" />
-            <h4 className="text-lg text-title">Servicios</h4>
+            <h4 className="text-lg text-title">Componentes</h4>
             <p className="text-sm text-center text-content">
               Contamos con servcios de entrenamiento profesional, alquiler de
               cancha, alquiler de equipos y mucho mas.
@@ -164,9 +164,7 @@ export default function Page() {
       </div>
 
       <section className="w-full bg-black px-4 py-8 flex flex-col items-center justify-center gap-2 h-fit overflow-x-hidden">
-        <h3 className="text-2xl text-center text-title mt-8">
-          Nuestros Servicios
-        </h3>
+        <h3 className="text-2xl text-center text-title mt-8">Componentes</h3>
         <p className="text-content text-xl">
           Escoge el que mejor se adapte a ti
         </p>
@@ -183,7 +181,7 @@ export default function Page() {
             </p>
             <button
               onClick={() => setModal1(true)}
-              className="border-2 border-white text-white px-4 py-2 rounded-md text-sm text-content"
+              className="border-2 border-white text-white px-4 py-2 rounded-md text-sm text-content shadow-3xl"
             >
               Mas info
             </button>
