@@ -17,6 +17,10 @@ import Img5 from "../../public/img/experiencia/5.jpeg";
 import Img6 from "../../public/img/experiencia/6.jpg";
 import Img7 from "../../public/img/experiencia/1000s.jpg";
 import Img8 from "../../public/img/experiencia/8.png";
+import Register from "../../public/registered.png";
+import Comabat from "../../public/combat.png";
+import Gold from "../../public/gold-medal.png";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -30,7 +34,7 @@ const Experiencia = () => {
   return (
     <>
       <Navbar />
-      <section className="w-full px-4 h-fit mt-20">
+      <section className="w-full px-4 h-fit pt-20">
         <div className="w-full flex flex-col items-center justify-center gap-2 h-fit">
           <h1 className="text-title text-3xl mt-6">Experiencia Helipuerto</h1>
           <p className="text-content">
@@ -127,6 +131,62 @@ const Experiencia = () => {
               quod quibusdam accusamus illum! Ab doloribus, repellat commodi
               asperiores quis deleniti.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="w-full bg-black px-4 py-8 flex flex-col items-center justify-center gap-2 h-fit overflow-x-hidden relative">
+        <h3 className="text-2xl text-center text-title mt-8">
+          Arma tus Torneos
+        </h3>
+        <p className="text-content text-xl">Puedes competir en el Helipuerto</p>
+        <div className="flex flex-col md:flex-row md:flex-wrap">
+          <div
+            className="w-full flex flex-col gap-4 items-center justify-center md:w-4/12 p-4"
+            data-aos="fade-in"
+            data-aos-delay="1000"
+          >
+            <Image src={Register} width={200} height={200} alt="heli" />
+            <h4 className="text-lg text-title">Alistate Para el combate</h4>
+            <p className="text-sm text-center text-content">
+              Registra a tus equipo para entrar a la zona de batalla.
+            </p>
+            <button className="border-2 border-white text-white px-4 py-2 rounded-md text-sm text-content">
+              Reserva ahora
+            </button>
+          </div>
+
+          <div
+            className="w-full flex flex-col gap-4 items-center justify-center md:w-4/12 p-4"
+            data-aos="fade-in"
+            data-aos-delay="2000"
+          >
+            <Image src={Comabat} width={200} height={200} alt="heli" />
+            <h4 className="text-lg text-title">Combate</h4>
+            <p className="text-sm text-center text-content">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Corporis,
+            </p>
+            <button className="border-2 border-white text-white px-4 py-2 rounded-md text-sm text-content">
+              Reserva ahora
+            </button>
+          </div>
+
+          <div
+            className="w-full flex flex-col gap-4 items-center justify-center md:w-4/12 p-4"
+            data-aos="fade-in"
+            data-aos-delay="3000"
+          >
+            <Image src={Gold} width={200} height={200} alt="heli" />
+            <h4 className="text-lg text-title">Disfruta de tu victoria</h4>
+            <p className="text-sm text-center text-content">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Corporis,
+            </p>
+
+            <button className="border-2 border-white text-white px-4 py-2 rounded-md text-sm text-content">
+              Reserva ahora
+            </button>
           </div>
         </div>
       </section>

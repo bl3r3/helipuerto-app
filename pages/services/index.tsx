@@ -24,8 +24,10 @@ const Services = () => {
       <Navbar />
       <section className="w-full px-4 h-fit pt-20">
         <div className="w-full flex flex-col items-center justify-center gap-2 h-fit">
-          <h1 className="text-title text-3xl mt-8">Nuestros Servicos</h1>
-          <p className="text-content">Consulta por nuestros servicos</p>
+          <h1 className="text-title text-3xl mt-8">Nuestros Componentes</h1>
+          <p className="text-content">
+            Consulta por nuestros servicios y por nuestras diferentes zonas
+          </p>
           <div className="flex items-center">
             <div
               className="w-full flex flex-col items-end justify-center md:w-1/2"
@@ -92,12 +94,6 @@ const Services = () => {
         </div>
       </section> */}
       <section className="w-full bg-black px-4 py-8 flex flex-col items-center justify-center gap-2 h-fit overflow-x-hidden relative">
-        {/* <h3 className="text-2xl text-center text-title mt-8">
-          Nuestros Servicios
-        </h3>
-        <p className="text-content text-xl">
-          Escoge el que mejor se adapte a ti
-        </p> */}
         <div className="flex flex-col md:flex-row md:flex-wrap">
           <div
             className="w-full flex flex-col gap-2 items-center justify-center md:w-4/12 p-4"
@@ -185,6 +181,11 @@ const Services = () => {
               voluptatem a veritatis repudiandae, laborum temporibus mollitia
               tempore ut illo ullam.
             </p>
+            <Divider className="my-4 bg-white" />
+
+            <button className="border-2 border-white text-white px-4 py-2 rounded-md text-sm text-content">
+              Reserva ahora
+            </button>
           </div>
           <div className="w-2/3">
             <Gallery data={slides} />
@@ -211,6 +212,9 @@ const Services = () => {
               voluptatem a veritatis repudiandae, laborum temporibus mollitia
               tempore ut illo ullam.
             </p>
+            <button className="border-2 border-white text-white px-4 py-2 rounded-md text-sm text-content">
+              Reserva ahora
+            </button>
           </div>
         </div>
         <div className="w-full flex py-10">
