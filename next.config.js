@@ -8,6 +8,16 @@ const nextConfig = {
         hostname: "placehold.co",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+        port: "",
+      },
+      {
+        protocol: "https",
+        hostname: "source.unsplash.com",
+        port: "",
+      },
     ],
   },
 };

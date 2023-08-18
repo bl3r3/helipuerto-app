@@ -6,7 +6,7 @@ import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const [color, setColor] = useState("trasparent");
+  const [color, setColor] = useState("trasnparent");
   const [textColor, setTextColor] = useState("text-main-color-rc");
   const [shadowColor, setShadowColor] = useState("0px 0px 0px 0px transparent");
 
@@ -21,7 +21,7 @@ const Navbar = () => {
         setTextColor("text-white");
         setShadowColor("0px 0px 40px 5px rgba(199,229,14,0.7)");
       } else {
-        setColor("transparent");
+        setColor("#000");
         setTextColor("text-main-color-rc");
         setShadowColor("0px 0px 0px 0px transparent");
       }
@@ -46,7 +46,7 @@ const Navbar = () => {
             <Link href="/">Home</Link>
           </li>
           <li className="p-5 hover:text-second-color-hl">
-            <Link href="/services">Servicios</Link>
+            <Link href="/services">Componentes</Link>
           </li>
           <li className="p-5 hover:text-second-color-hl">
             <Link href="/experiencia">Experiencia</Link>
@@ -78,7 +78,7 @@ const Navbar = () => {
               <Link href="/">Home</Link>
             </li>
             <li className="p-4 text-4xl hover:text-second-color-hl">
-              <Link href="/portfolio">Servicios</Link>
+              <Link href="/services">Componentes</Link>
             </li>
             <li className="p-4 text-4xl hover:text-second-color-hl">
               <Link href="/experiencia">Experiencia</Link>
