@@ -159,11 +159,11 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <div className=" w-full">
+      {/* <div className=" w-full">
         <Image src={Cinta} alt="heli" />
-      </div>
+      </div> */}
 
-      <section className="w-full bg-black px-4 py-8 flex flex-col items-center justify-center gap-2 h-fit overflow-x-hidden">
+      <section className="w-full bg-black px-4 py-8 flex flex-col items-center justify-center gap-2 h-fit overflow-x-hidden bg-cinta">
         <h3 className="text-2xl text-center text-title mt-8">Componentes</h3>
         <p className="text-content text-xl">
           Escoge el que mejor se adapte a ti
@@ -225,9 +225,9 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <div className=" w-full">
+      {/* <div className=" w-full">
         <Image src={Cinta} alt="heli" />
-      </div>
+      </div> */}
       <section className="w-full px-4 img-bg-second h-[460px] bg-black">
         <div className="container mx-auto px-4 h-full md:w-full">
           <div className="flex content-center items-center justify-center h-full flex-col">

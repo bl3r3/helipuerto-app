@@ -64,6 +64,13 @@ img {
   background-repeat: no-repeat;
 }
 
+.bg-cinta {
+  background-image: url("../public/img/Cintas-01.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /* VIDEO */
 
 #myVideo {
