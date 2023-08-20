@@ -40,7 +40,7 @@ const Experiencia = () => {
           <p className="text-content">
             Ven y vive la experiencia helipuerto con nosotros.
           </p>
-          <div className="flex items-center">
+          <div className="w-full flex flex-col items-center md:flex-row">
             <div
               className="w-full flex flex-col items-end justify-center md:w-1/2"
               data-aos="slide-right"

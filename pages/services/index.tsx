@@ -28,7 +28,7 @@ const Services = () => {
           <p className="text-content">
             Consulta por nuestros servicios y por nuestras diferentes zonas
           </p>
-          <div className="flex items-center">
+          <div className="w-full flex flex-col md:flex-row  md:items-center">
             <div
               className="w-full flex flex-col items-end justify-center md:w-1/2"
               data-aos="slide-right"
@@ -154,19 +154,19 @@ const Services = () => {
         </div>
       </section> */}
       <section className="w-full bg-black px-4 py-8 flex flex-col items-center justify-center gap-2 h-fit relative">
-        <div className="absolute top-0 right-10 w-48" data-aos="slide-left">
+        {/* <div className="absolute top-0 right-10 w-48" data-aos="slide-left">
           <Image src={Paint} alt="some" />
         </div>
         <div className="absolute top-0 left-10 w-48" data-aos="slide-right">
           <Image src={Paint} alt="some" />
-        </div>
+        </div> */}
         <h3 className="text-2xl text-center text-title mt-8">
           Zonas de Combate
         </h3>
         <p className="text-content text-xl">Alistate y combate</p>
-        <div className="w-full flex py-10">
+        <div className="w-full flex flex-col gap-4 py-5 md:flex-row">
           <div
-            className=" flex items-start justify-center flex-col w-1/3 px-12 gap-2"
+            className="w-full flex items-start justify-center flex-col md:w-1/3 px-12 gap-2"
             data-aos="zoom-in-right"
           >
             <h3 className="text-2xl text-center text-title mt-8">Cancha A</h3>
@@ -187,16 +187,16 @@ const Services = () => {
               Reserva ahora
             </button>
           </div>
-          <div className="w-2/3">
+          <div className="w-full md:w-2/3">
             <Gallery data={slides} />
           </div>
         </div>
-        <div className="w-full flex py-10">
-          <div className="w-2/3">
+        <div className="w-full flex flex-col-reverse gap-4 py-5 md:flex-row">
+          <div className="w-full gap-2 md:w-2/3">
             <Gallery data={slides} />
           </div>
           <div
-            className=" flex items-start justify-center flex-col w-1/3 px-12 gap-2 relative"
+            className="w-full flex items-start justify-center flex-col md:w-1/3 px-12 gap-2 relative"
             data-aos="zoom-in-left"
           >
             <h3 className="text-2xl text-center text-title mt-8">Cancha B</h3>
@@ -217,9 +217,9 @@ const Services = () => {
             </button>
           </div>
         </div>
-        <div className="w-full flex py-10">
+        <div className="w-full flex flex-col gap-4 py-5 md:flex-row">
           <div
-            className=" flex items-start justify-center flex-col w-1/3 px-12 gap-2"
+            className="w-full flex items-start justify-center flex-col md:w-1/3 px-12 gap-2"
             data-aos="zoom-in-right"
           >
             <h3 className="text-2xl text-center text-title mt-8">Cancha C</h3>
@@ -237,16 +237,16 @@ const Services = () => {
               tempore ut illo ullam.
             </p>
           </div>
-          <div className="w-2/3">
+          <div className="w-full md:w-2/3">
             <Gallery data={slides} />
           </div>
         </div>
-        <div className="w-full flex py-10">
-          <div className="w-2/3">
+        <div className="w-full flex flex-col-reverse gap-4 py-5 md:flex-row">
+          <div className="w-full md:w-2/3">
             <Gallery data={slidesGaming} />
           </div>
           <div
-            className=" flex items-start justify-center flex-col w-1/3 px-12 gap-2 "
+            className="w-full flex items-start justify-center flex-col md:w-1/3 px-12 gap-2 "
             data-aos="zoom-in-left"
           >
             {/* <div className="absolute  top-0 right-0 z-10">
