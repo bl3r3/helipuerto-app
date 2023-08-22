@@ -13,14 +13,16 @@ const index = () => {
   return (
     <>
       <Navbar />
-      <section className="w-full px-4 h-fit mt-20">
+      <section className="w-full px-4 h-fit pt-20">
         <div className="w-full flex flex-col items-center justify-center gap-2 h-fit ">
           <h1 className="text-title text-3xl mt-12">Nuestros Servicos</h1>
           <p className="text-content">Consulta por nuestros servicos</p>
         </div>
-        <div className="w-full flex items-center justify-center gap-4 h-fit px-24">
+        <div className="w-full flex flex-col px-4 mt-4 md:flex-row items-center justify-center gap-4 h-fit md:px-24">
           <div className="w-full md:w-1/3 flex flex-col items-start justify-start">
-            <h3 className="text-title text-3xl">Detalles de Contacto</h3>
+            <h3 className="text-title text-3xl text-center md:text-left">
+              Detalles de Contacto
+            </h3>
             <div className="flex w-full gap-4 py-2 text-content">
               <span className="bg-lime-400 rounded-full w-14 h-12 flex items-center justify-center">
                 <TiLocation size={18} color="white" />
@@ -68,9 +70,21 @@ const index = () => {
           </h1>
           <hr className="border-lime-400 border-2 w-full" />
           <div className="w-full flex items-center justify-center gap-2">
-            <Image src={Placeholder} width={200} height={200} alt="heli" />
-            <Image src={Placeholder} width={200} height={200} alt="heli" />
-            <Image src={Placeholder} width={200} height={200} alt="heli" />
+            <div className="w-full md:w-1/3">
+              <a href="https://www.instagram.com/" target="_blank">
+                <Image src={Placeholder} alt="heli" />
+              </a>
+            </div>
+            <div className="w-full md:w-1/3">
+              <a href="https://www.instagram.com/" target="_blank">
+                <Image src={Placeholder} alt="heli" />
+              </a>
+            </div>
+            <div className="w-full md:w-1/3">
+              <a href="https://www.instagram.com/" target="_blank">
+                <Image src={Placeholder} alt="heli" />
+              </a>
+            </div>
           </div>
         </div>
       </section>

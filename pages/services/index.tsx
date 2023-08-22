@@ -188,7 +188,7 @@ const Services = () => {
             </button>
           </div>
           <div className="w-full md:w-2/3">
-            <Gallery data={slides} />
+            <Gallery data={[{ src: "./heli1.png" }]} />
           </div>
         </div>
         <div className="w-full flex flex-col-reverse gap-4 py-5 md:flex-row">

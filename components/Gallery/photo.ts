@@ -308,3 +308,11 @@ export const gamingphotos = [
     height: 720,
   },
 ];
+
+export const heliImages = [
+  {
+    id: "1Uc2EpxqmrzaCUzVnVODPgd7hVRIRuiyA",
+    width: 1080,
+    height: 1080,
+  },
+];

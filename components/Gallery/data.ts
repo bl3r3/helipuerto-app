@@ -1,11 +1,11 @@
-import { gamingphotos, unsplashPhotos } from "./photo";
+import { gamingphotos, heliImages, unsplashPhotos } from "./photo";
 
 const breakpoints = [4320, 2160, 1080, 640, 384, 256, 128];
 
 const unsplashLink = (id: string, width: number, height: number) =>
   `https://source.unsplash.com/${id}/${width}x${height}`;
 
-const slides = unsplashPhotos.map((photo) => {
+export const slides = unsplashPhotos.map((photo) => {
   const width = photo.width * 4;
   const height = photo.height * 4;
   return {
@@ -23,7 +23,7 @@ const slides = unsplashPhotos.map((photo) => {
   };
 });
 
-const slidesGaming = gamingphotos.map((photo) => {
+export const slidesGaming = gamingphotos.map((photo) => {
   const width = photo.width * 4;
   const height = photo.height * 4;
   return {
@@ -41,4 +41,17 @@ const slidesGaming = gamingphotos.map((photo) => {
   };
 });
 
-export { slides, slidesGaming };
+// const googleLink = (id: string) =>
+//   `https://drive.google.com/file/d/${id}/view?usp=sharing`;
+
+// const googleSlides = heliImages.map((photo) => {
+//   const width = photo.width * 4;
+//   const height = photo.height * 4;
+//   return {
+//     src: googleLink(photo.id),
+//     width,
+//     height,
+//   };
+// });
+
+// export { slides, slidesGaming, googleSlides };
