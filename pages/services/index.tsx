@@ -11,7 +11,11 @@ import Paint from "../../public/img/7496-removebg-preview.png";
 
 import { Gallery } from "../../components/Gallery/Gallery";
 import { Chip, Divider } from "@nextui-org/react";
-import { slides, slidesGaming } from "../../components/Gallery/data";
+import {
+  slides,
+  slidesGaming,
+  slidesTest,
+} from "../../components/Gallery/data";
 
 const Services = () => {
   useEffect(() => {
@@ -188,7 +192,7 @@ const Services = () => {
             </button>
           </div>
           <div className="w-full md:w-2/3">
-            <Gallery data={[{ src: "./heli1.png" }]} />
+            <Gallery data={slidesTest} />
           </div>
         </div>
         <div className="w-full flex flex-col-reverse gap-4 py-5 md:flex-row">

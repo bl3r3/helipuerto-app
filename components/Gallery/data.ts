@@ -41,17 +41,72 @@ export const slidesGaming = gamingphotos.map((photo) => {
   };
 });
 
-// const googleLink = (id: string) =>
-//   `https://drive.google.com/file/d/${id}/view?usp=sharing`;
+const galleryTab = [
+  // you can add more image if you want
+  {
+    imageUrl:
+      "https://raw.githubusercontent.com/bl3r3/helipuerto-app/main/pages/services/heli-img/heli1.jpeg",
+    type: "Helipuerto",
+    title: "Heli1",
+  },
+  {
+    imageUrl:
+      "https://raw.githubusercontent.com/bl3r3/helipuerto-app/main/pages/services/heli-img/heli2.jpeg",
+    type: "Paintball",
+    title: "Heli2",
+  },
+  {
+    imageUrl:
+      "https://raw.githubusercontent.com/bl3r3/helipuerto-app/main/pages/services/heli-img/heli3.jpeg",
+    type: "Nature",
+    title: "Beautiful Work",
+  },
+  {
+    imageUrl:
+      "https://raw.githubusercontent.com/bl3r3/helipuerto-app/main/pages/services/heli-img/heli4.jpeg",
+    type: "Nature",
+    title: "Beautiful Work",
+  },
+  {
+    imageUrl:
+      "https://raw.githubusercontent.com/bl3r3/helipuerto-app/main/pages/services/heli-img/heli5.jpeg",
+    type: "Nature",
+    title: "Beautiful Work",
+  },
+  {
+    imageUrl:
+      "https://raw.githubusercontent.com/bl3r3/helipuerto-app/main/pages/services/heli-img/heli6.jpeg",
+    type: "Nature",
+    title: "Beautiful Work",
+  },
+  {
+    imageUrl:
+      "https://raw.githubusercontent.com/bl3r3/helipuerto-app/main/pages/services/heli-img/heli7.jpeg",
+    type: "Nature",
+    title: "Beautiful Work",
+  },
+  {
+    imageUrl:
+      "https://raw.githubusercontent.com/bl3r3/helipuerto-app/main/pages/services/heli-img/heli8.jpeg",
+    type: "Nature",
+    title: "Beautiful Work",
+  },
+  {
+    imageUrl:
+      "https://raw.githubusercontent.com/bl3r3/helipuerto-app/main/pages/services/heli-img/heli9.jpeg",
+    type: "Nature",
+    title: "Beautiful Work",
+  },
+  {
+    imageUrl:
+      "https://raw.githubusercontent.com/bl3r3/helipuerto-app/main/pages/services/heli-img/heli10.jpeg",
+    type: "Nature",
+    title: "Beautiful Work",
+  },
+];
 
-// const googleSlides = heliImages.map((photo) => {
-//   const width = photo.width * 4;
-//   const height = photo.height * 4;
-//   return {
-//     src: googleLink(photo.id),
-//     width,
-//     height,
-//   };
-// });
-
-// export { slides, slidesGaming, googleSlides };
+export const slidesTest = galleryTab.map((item) => ({
+  src: item.imageUrl,
+  width: 1080,
+  height: 1080,
+}));
