@@ -1,17 +1,22 @@
 import React from "react";
-import Navbar from "../../components/ui/Navbar";
-import { FormComponent } from "../../components/Form/Form";
-import Placeholder from "../../public/placeholder.svg";
+import Head from "next/head";
 import Image from "next/image";
+import Navbar from "../../components/ui/Navbar";
 import Footer from "../../components/ui/Footer";
-
+import { FormComponent } from "../../components/Form/Form";
 import { TiLocation } from "react-icons/ti";
 import { FaPhone } from "react-icons/fa";
 import { AiOutlineMail, AiOutlineInstagram } from "react-icons/ai";
+import Instagram from "../../pages/services/heli-img/heli1.jpeg";
+import Instagram2 from "../../pages/services/heli-img/heli2.jpeg";
+import Instagram3 from "../../pages/services/heli-img/heli25.jpeg";
 
 const index = () => {
   return (
     <>
+      <Head>
+        <title>Contacto | Helipuerto</title>
+      </Head>
       <Navbar />
       <section className="w-full px-4 h-fit pt-20">
         <div className="w-full flex flex-col items-center justify-center gap-2 h-fit ">
@@ -69,20 +74,24 @@ const index = () => {
             Instagram
           </h1>
           <hr className="border-lime-400 border-2 w-full" />
-          <div className="w-full flex items-center justify-center gap-2">
-            <div className="w-full md:w-1/3">
+          <div className="w-full flex items-center justify-between gap-2">
+            <div className="w-full ">
               <a href="https://www.instagram.com/" target="_blank">
-                <Image src={Placeholder} alt="heli" />
+                <Image src={Instagram} alt="heli" />
               </a>
             </div>
-            <div className="w-full md:w-1/3">
-              <a href="https://www.instagram.com/" target="_blank">
-                <Image src={Placeholder} alt="heli" />
+            <div className="w-full ">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                className="w-full"
+              >
+                <Image src={Instagram2} alt="heli" />
               </a>
             </div>
-            <div className="w-full md:w-1/3">
+            <div className="w-full ">
               <a href="https://www.instagram.com/" target="_blank">
-                <Image src={Placeholder} alt="heli" />
+                <Image src={Instagram3} alt="heli" />
               </a>
             </div>
           </div>

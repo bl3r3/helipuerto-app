@@ -23,6 +23,7 @@ import Gold from "../../public/gold-medal.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Head from "next/head";
 
 const Experiencia = () => {
   useEffect(() => {
@@ -33,6 +34,9 @@ const Experiencia = () => {
 
   return (
     <>
+      <Head>
+        <title>Experiencia | Helipuerto</title>
+      </Head>
       <Navbar />
       <section className="w-full px-4 h-fit pt-20">
         <div className="w-full flex flex-col items-center justify-center gap-2 h-fit">

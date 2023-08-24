@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../public/logo.png";
+import Logo from "../../public/img/logo.png";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -8,11 +8,11 @@ const Footer = () => {
     <footer className="bg-black">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
-          <div className="mb-6 md:mb-0">
+          <div className="mb-6 md:mb-0 w-1/2">
             <Link href="https://flowbite.com/" className="flex items-center">
               <Image
                 src={Logo}
-                className="h-40 max-w-80 mr-3 object-contain"
+                className="h-40 max-w-20 mr-3 object-cover"
                 alt="FlowBite Logo"
               />
             </Link>

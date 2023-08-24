@@ -16,6 +16,7 @@ import {
   slidesGaming,
   slidesTest,
 } from "../../components/Gallery/data";
+import Head from "next/head";
 
 const Services = () => {
   useEffect(() => {
@@ -25,6 +26,9 @@ const Services = () => {
   }, []);
   return (
     <>
+      <Head>
+        <title>Componentes | Helipuerto</title>
+      </Head>
       <Navbar />
       <section className="w-full px-4 h-fit pt-20">
         <div className="w-full flex flex-col items-center justify-center gap-2 h-fit">
@@ -158,12 +162,12 @@ const Services = () => {
         </div>
       </section> */}
       <section className="w-full bg-black px-4 py-8 flex flex-col items-center justify-center gap-2 h-fit relative">
-        {/* <div className="absolute top-0 right-10 w-48" data-aos="slide-left">
+        <div className="absolute top-0 right-10 w-48" data-aos="slide-left">
           <Image src={Paint} alt="some" />
         </div>
         <div className="absolute top-0 left-10 w-48" data-aos="slide-right">
           <Image src={Paint} alt="some" />
-        </div> */}
+        </div>
         <h3 className="text-2xl text-center text-title mt-8">
           Zonas de Combate
         </h3>

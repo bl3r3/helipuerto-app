@@ -1,15 +1,14 @@
 "use client";
 import { useState, useEffect } from "react";
-import Link from "next/link";
+import { Metadata } from "next";
+import Head from "next/head";
 import Image from "next/image";
 import Footer from "../components/ui/Footer";
 import Navbar from "../components/ui/Navbar";
-import "animate.css";
 import AOS from "aos";
+import "animate.css";
 import "aos/dist/aos.css";
-import PureModal from "react-pure-modal";
 import "react-pure-modal/dist/react-pure-modal.min.css";
-import Modal1 from "../public/img/home/modal3.jpeg";
 import Nosotros1 from "../public/img/home/paint-11.jpeg";
 import Calavera from "../public/img/home/calavera.jpeg";
 import Cinta from "../public/img/home/cintaa.png";
@@ -21,10 +20,28 @@ import CrossHair from "../public/img/home/crosshair.svg";
 import Campo1 from "../public/img/home/campo-2.jpg";
 import Campo2 from "../public/img/home/equipo_de_airsoft.jpg";
 import Equipo from "../public/img/home/modal2.webp";
+import { useDisclosure } from "@nextui-org/react";
+import { ModalComponent } from "../components/Modal/Modal";
+import Logo from "../public/img/logo-cut.png";
+
+export const metadata: Metadata = {
+  title: "Helipuerto",
+  description: "El mejor Paintball de la ciudad",
+};
 
 export default function Page() {
-  const [modal, setModal] = useState(false);
-  const [modal1, setModal1] = useState(false);
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+  const [size, setSize] = useState("2xl");
+
+  const handleOpen1 = (size: string) => {
+    setSize(size);
+    onOpen();
+  };
+
+  const handleOpen2 = (size: string) => {
+    setSize(size);
+    onOpen();
+  };
 
   useEffect(() => {
     AOS.init({
@@ -33,6 +50,9 @@ export default function Page() {
   }, []);
   return (
     <>
+      <Head>
+        <title>Helipuerto</title>
+      </Head>
       <Navbar />
       <section className="min-[320px]:w-full w-full mx-auto h-screen relative">
         {/* <div
@@ -44,18 +64,24 @@ export default function Page() {
         </video>
         <div className="container px-4 mx-auto h-full md:w-full absolute top-0 left-0 right-0">
           <div className="flex content-center items-center justify-center h-full flex-col top-50">
-            <h1 className="text-4xl animate__animated animate__backInUp min-[320px]:text-center">
+            {/* <h1 className="text-4xl animate__animated animate__backInUp min-[320px]:text-center">
               Vive la experiencia Helipuerto
-            </h1>
+            </h1> */}
+            <Image
+              src={Logo}
+              alt="logo"
+              width={450}
+              className="animate__animated animate__backInUp"
+            />
             <h2 className="bg-white text-black text-xl w-full text-center animate__animated animate__backInUp animate__delay-1s">
-              Las mejores canchas de Airsoft y Paintball de la ciudad.
+              Vive la Experiencia Helipuerto
             </h2>
             <div className="w-full flex flex-col md:flex-row md:items-center md:justify-center gap-2 animate__delay-2s animate__animated animate__fadeIn">
               <button className="bg-lime-400 text-black text-xl p-2 text-center mt-4 rounded-md">
                 Registrate
               </button>
               <button className="bg-transparent text-white text-xl p-2 text-center mt-4 rounded-md border-white border-2">
-                Contactanos
+                Conocenos
               </button>
             </div>
           </div>
@@ -180,8 +206,8 @@ export default function Page() {
               Corporis,
             </p>
             <button
-              onClick={() => setModal1(true)}
               className="border-2 border-white text-white px-4 py-2 rounded-md text-sm text-content shadow-3xl"
+              onClick={() => handleOpen1(size)}
             >
               Mas info
             </button>
@@ -197,10 +223,7 @@ export default function Page() {
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Corporis,
             </p>
-            <button
-              onClick={() => setModal1(true)}
-              className="border-2 border-white text-white px-4 py-2 rounded-md text-sm text-content"
-            >
+            <button className="border-2 border-white text-white px-4 py-2 rounded-md text-sm text-content">
               Mas info
             </button>
           </div>
@@ -216,12 +239,15 @@ export default function Page() {
               Corporis,
             </p>
 
-            <button
-              className="border-2 border-white text-white px-4 py-2 rounded-md text-sm text-content"
-              onClick={() => setModal(true)}
-            >
+            <button className="border-2 border-white text-white px-4 py-2 rounded-md text-sm text-content">
               Mas Informacion
             </button>
+            <ModalComponent
+              title="text"
+              content="text"
+              isOpen={isOpen}
+              onOpenChange={onOpenChange}
+            />
           </div>
         </div>
       </section>
@@ -252,15 +278,7 @@ export default function Page() {
         </div>
       </section>
 
-      <PureModal
-        header="Canchas de Airsoft"
-        isOpen={modal}
-        closeButton="x"
-        onClose={() => {
-          setModal(false);
-        }}
-        width="70%"
-      >
+      {/* <PureModal header="Canchas de Airsoft" closeButton="x" width="70%">
         <div className="flex items-start justify-start gap-6">
           <div className="w-1/2">
             <Image src={Modal1} alt="heli" />
@@ -272,45 +290,13 @@ export default function Page() {
               minus incidunt? Error adipisci praesentium excepturi totam
               voluptas eligendi iste nesciunt. Eius, quasi!
             </p>
-            <button
-              className="bg-lime-400 text-black text-xl p-2 text-center mt-4 rounded-mdtton"
-              onClick={() => setModal(false)}
-            >
+            <button className="bg-lime-400 text-black text-xl p-2 text-center mt-4 rounded-mdtton">
               <Link href="/services">Mas informacion</Link>
             </button>
           </div>
         </div>
-      </PureModal>
+      </PureModal> */}
 
-      <PureModal
-        header="Canchas de Airsoft"
-        isOpen={modal1}
-        closeButton="x"
-        onClose={() => {
-          setModal1(false);
-        }}
-        width="70%"
-      >
-        <div className="flex items-start justify-start gap-6">
-          <div className="w-1/2">
-            <Image src={Modal1} alt="heli" />
-          </div>
-          <div className="flex flex-col items-start w-1/2">
-            <p className="text-content text-md">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-              perspiciatis dicta pariatur accusamus delectus voluptates at ex
-              minus incidunt? Error adipisci praesentium excepturi totam
-              voluptas eligendi iste nesciunt. Eius, quasi!
-            </p>
-            <button
-              className="bg-lime-400 text-black text-xl p-2 text-center mt-4 rounded-mdtton"
-              onClick={() => setModal1(false)}
-            >
-              <Link href="/services">Mas informacion</Link>
-            </button>
-          </div>
-        </div>
-      </PureModal>
       <Footer />
     </>
   );
