@@ -14,6 +14,7 @@ body {
   background-color: var(--bg-color);
   font-family: "A4 speed";
   overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 img {
