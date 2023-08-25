@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../public/img/logo.png";
+import LogoFooter from "../../public/logo.png";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="mb-6 md:mb-0 w-1/2">
             <Link href="https://flowbite.com/" className="flex items-center">
               <Image
-                src={Logo}
+                src={LogoFooter}
                 className="h-40 max-w-20 mr-3 object-cover"
                 alt="FlowBite Logo"
               />
