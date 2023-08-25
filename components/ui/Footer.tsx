@@ -1,5 +1,5 @@
 import React from "react";
-import LogoFooter from "../../public/logo.png";
+import LogoFooter from "../../public/img/logo-cut.png";
 import Image from "next/image";
 import Link from "next/link";
 
