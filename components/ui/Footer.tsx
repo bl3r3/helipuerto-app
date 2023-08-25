@@ -55,10 +55,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href="https://discord.gg/4eeurUVvTy"
-                    className="hover:underline"
-                  >
+                  <Link href="https://discord.gg" className="hover:underline">
                     Discord
                   </Link>
                 </li>
