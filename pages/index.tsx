@@ -38,11 +38,6 @@ export default function Page() {
     onOpen();
   };
 
-  const handleOpen2 = (size: string) => {
-    setSize(size);
-    onOpen();
-  };
-
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -54,15 +49,15 @@ export default function Page() {
         <title>Helipuerto</title>
       </Head>
       <Navbar />
-      <section className="min-[320px]:w-full w-full mx-auto h-screen relative">
+      <section className="min-[320px]:w-full w-screen mx-auto h-screen relative">
         {/* <div
           className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
         > */}
-        <video className="w-full p-0" autoPlay muted loop id="myVideo">
+        <video className="w-screen p-0" autoPlay muted loop id="myVideo">
           <source src="./video.mp4" type="video/mp4" />
         </video>
-        <div className="container px-4 mx-auto h-full md:w-full absolute top-0 left-0 right-0">
+        <div className="container w-screen px-4 mx-auto h-full md:w-full absolute top-0 left-0 right-0">
           <div className="flex content-center items-center justify-center h-full flex-col top-50">
             {/* <h1 className="text-4xl animate__animated animate__backInUp min-[320px]:text-center">
               Vive la experiencia Helipuerto
@@ -88,7 +83,7 @@ export default function Page() {
         </div>
         {/* </div> */}
       </section>
-      <section className="w-full px-4 py-8 flex flex-col gap-4 md:flex-row md:px-12 lg:px-24 text-content bg-black">
+      <section className="w-screen px-4 py-8 flex flex-col gap-4 md:flex-row md:px-12 lg:px-24 text-content bg-black">
         <div
           className="w-full flex flex-col justify-center items-end bg-first-card border-2 rounded-md h-56 p-4 md:w-6/12 md:h-[270px]"
           data-aos="slide-right"
@@ -189,7 +184,7 @@ export default function Page() {
         <Image src={Cinta} alt="heli" />
       </div> */}
 
-      <section className="w-full bg-black px-4 py-8 flex flex-col items-center justify-center gap-2 h-fit overflow-x-hidden bg-cinta">
+      <section className="w-screen bg-black px-4 py-8 flex flex-col items-center justify-center gap-2 h-fit overflow-x-hidden bg-cinta">
         <h3 className="text-2xl text-center text-title mt-8">Componentes</h3>
         <p className="text-content text-xl">
           Escoge el que mejor se adapte a ti
@@ -254,7 +249,7 @@ export default function Page() {
       {/* <div className=" w-full">
         <Image src={Cinta} alt="heli" />
       </div> */}
-      <section className="w-full px-4 img-bg-second h-[460px] bg-black">
+      <section className="w-screen px-4 img-bg-second h-[460px] bg-black">
         <div className="container mx-auto px-4 h-full md:w-full">
           <div className="flex content-center items-center justify-center h-full flex-col">
             <h1 className="text-4xl" data-aos="slide-left">
