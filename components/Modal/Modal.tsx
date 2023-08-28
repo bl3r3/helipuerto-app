@@ -11,8 +11,8 @@ import {
 type ModalProps = {
   title: string;
   content: string;
-  isOpen: any;
-  onOpenChange: any;
+  isOpen: boolean;
+  onOpenChange: () => void;
 };
 
 export const ModalComponent = ({

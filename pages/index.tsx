@@ -1,17 +1,15 @@
 "use client";
+
 import { useState, useEffect } from "react";
 import { Metadata } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import Footer from "../components/ui/Footer";
-import Navbar from "../components/ui/Navbar";
 import AOS from "aos";
 import "animate.css";
 import "aos/dist/aos.css";
 import "react-pure-modal/dist/react-pure-modal.min.css";
 import Nosotros1 from "../public/img/home/paint-11.jpeg";
 import Calavera from "../public/img/home/calavera.jpeg";
-import Cinta from "../public/img/home/cintaa.png";
 import Fuerza from "../public/img/home/fuerza.jpg";
 import Membresia from "../public/img/home/Membresia.png";
 import Canchas from "../public/img/home/canchas.jpeg";
@@ -43,12 +41,12 @@ export default function Page() {
       duration: 1000,
     });
   }, []);
+
   return (
     <>
       <Head>
         <title>Helipuerto</title>
       </Head>
-      <Navbar />
       <section className="min-[320px]:w-full w-screen mx-auto h-screen relative">
         {/* <div
           className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
@@ -292,7 +290,7 @@ export default function Page() {
         </div>
       </PureModal> */}
 
-      <Footer />
+      
     </>
   );
 }

@@ -1,13 +1,9 @@
 "use client";
 import React, { useEffect } from "react";
-import Navbar from "../../components/ui/Navbar";
-import Footer from "../../components/ui/Footer";
 import Image from "next/image";
-import Splatters from "../../public/Splatters2.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Paint from "../../public/img/7496-removebg-preview.png";
 
 import { Gallery } from "../../components/Gallery/Gallery";
 import { Chip, Divider } from "@nextui-org/react";
@@ -19,17 +15,18 @@ import {
 import Head from "next/head";
 
 const Services = () => {
+  
   useEffect(() => {
     AOS.init({
       duration: 1500,
     });
   }, []);
+
   return (
     <>
       <Head>
         <title>Componentes | Helipuerto</title>
       </Head>
-      <Navbar />
       <section className="w-full px-4 h-fit pt-20">
         <div className="w-full flex flex-col items-center justify-center gap-2 h-fit">
           <h1 className="text-title text-3xl mt-8">Nuestros Componentes</h1>
@@ -41,7 +38,7 @@ const Services = () => {
               className="w-full flex flex-col items-end justify-center md:w-1/2"
               data-aos="slide-right"
             >
-              <Image src={Splatters} alt="splatter" />
+              <Image src="/Splatters2.png" width={200} height={200} alt="splatter" />
             </div>
             <div className="w-full flex flex-col gap-2 items-center justify-center md:w-1/2 text-content p-8">
               <p>
@@ -107,7 +104,7 @@ const Services = () => {
             className="w-full flex flex-col gap-2 items-center justify-center md:w-4/12 p-4"
             data-aos="fade-in"
           >
-            <Image src={Splatters} width={200} height={200} alt="heli" />
+            <Image src="/Splatters2.png" width={200} height={200} alt="heli" />
             <h4 className="text-lg text-title">Canchas de Paintball</h4>
             <p className="text-sm text-center text-content">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -122,7 +119,7 @@ const Services = () => {
             className="w-full flex flex-col gap-2 items-center justify-center md:w-4/12 p-4"
             data-aos="fade-in"
           >
-            <Image src={Splatters} width={200} height={200} alt="heli" />
+            <Image src="/Splatters2.png" width={200} height={200} alt="heli" />
             <h4 className="text-lg text-title">Equipamiento y replicas</h4>
             <p className="text-sm text-center text-content">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -137,7 +134,7 @@ const Services = () => {
             className="w-full flex flex-col gap-2 items-center justify-center md:w-4/12 p-4"
             data-aos="fade-in"
           >
-            <Image src={Splatters} width={200} height={200} alt="heli" />
+            <Image src="/Splatters2.png" width={200} height={200} alt="heli" />
             <h4 className="text-lg text-title">Entrenamiento Tactico</h4>
             <p className="text-sm text-center text-content">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -163,10 +160,10 @@ const Services = () => {
       </section> */}
       <section className="w-full bg-black px-4 py-8 flex flex-col items-center justify-center gap-2 h-fit relative">
         <div className="absolute top-0 right-10 w-48" data-aos="slide-left">
-          <Image src={Paint} alt="some" />
+          <Image src="/img/7496-removebg-preview.png" width={200} height={200} alt="some" />
         </div>
         <div className="absolute top-0 left-10 w-48" data-aos="slide-right">
-          <Image src={Paint} alt="some" />
+          <Image src="/img/7496-removebg-preview.png" width={200} height={200} alt="some" />
         </div>
         <h3 className="text-2xl text-center text-title mt-8">
           Zonas de Combate
@@ -290,8 +287,6 @@ const Services = () => {
           </div>
         </Carousel>
       </div> */}
-
-      <Footer />
     </>
   );
 };
