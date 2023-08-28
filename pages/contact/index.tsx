@@ -1,15 +1,10 @@
 import React from "react";
 import Head from "next/head";
 import Image from "next/image";
-import Navbar from "../../components/ui/Navbar";
-import Footer from "../../components/ui/Footer";
 import { FormComponent } from "../../components/Form/Form";
 import { TiLocation } from "react-icons/ti";
 import { FaPhone } from "react-icons/fa";
 import { AiOutlineMail, AiOutlineInstagram } from "react-icons/ai";
-import Instagram from "../../pages/services/heli-img/heli1.jpeg";
-import Instagram2 from "../../pages/services/heli-img/heli2.jpeg";
-import Instagram3 from "../../pages/services/heli-img/heli25.jpeg";
 
 const index = () => {
   return (
@@ -17,7 +12,6 @@ const index = () => {
       <Head>
         <title>Contacto | Helipuerto</title>
       </Head>
-      <Navbar />
       <section className="w-full px-4 h-fit pt-20">
         <div className="w-full flex flex-col items-center justify-center gap-2 h-fit ">
           <h1 className="text-title text-3xl mt-12">Nuestros Servicos</h1>
@@ -77,7 +71,7 @@ const index = () => {
           <div className="w-full flex items-center justify-between gap-2">
             <div className="w-full ">
               <a href="https://www.instagram.com/" target="_blank">
-                <Image src={Instagram} alt="heli" />
+                <Image src="/img/heli-img/heli1.jpeg" width={300} height={300} alt="heli" />
               </a>
             </div>
             <div className="w-full ">
@@ -86,18 +80,17 @@ const index = () => {
                 target="_blank"
                 className="w-full"
               >
-                <Image src={Instagram2} alt="heli" />
+                <Image src="/img/heli-img/heli2.jpeg" width={300} height={300} alt="heli" />
               </a>
             </div>
             <div className="w-full ">
               <a href="https://www.instagram.com/" target="_blank">
-                <Image src={Instagram3} alt="heli" />
+                <Image src="/img/heli-img/heli3.jpeg" width={300} height={300} alt="heli" />
               </a>
             </div>
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 };

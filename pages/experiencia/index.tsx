@@ -1,26 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
-import Navbar from "../../components/ui/Navbar";
-import Footer from "../../components/ui/Footer";
 import Image from "next/image";
-import Splatters from "../../public/Splatters1.png";
-import Especial from "../../public/img/experiencia/especial.png";
-import Rango1 from "../../public/img/experiencia/rango1.png";
-import Rango2 from "../../public/img/experiencia/rango2.png";
-import Rango3 from "../../public/img/experiencia/rango3.png";
-import Rango4 from "../../public/img/experiencia/rango4.png";
-import Img1 from "../../public/img/experiencia/1.jpg";
-import Img2 from "../../public/img/experiencia/2.jpg";
-import Img3 from "../../public/img/experiencia/3.jpeg";
-import Img4 from "../../public/img/experiencia/4.jpeg";
-import Img5 from "../../public/img/experiencia/5.jpeg";
-import Img6 from "../../public/img/experiencia/6.jpg";
-import Img7 from "../../public/img/experiencia/1000s.jpg";
-import Img8 from "../../public/img/experiencia/8.png";
-import Register from "../../public/registered.png";
-import Comabat from "../../public/combat.png";
-import Gold from "../../public/gold-medal.png";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Head from "next/head";
@@ -37,7 +17,6 @@ const Experiencia = () => {
       <Head>
         <title>Experiencia | Helipuerto</title>
       </Head>
-      <Navbar />
       <section className="w-full px-4 h-fit pt-20">
         <div className="w-full flex flex-col items-center justify-center gap-2 h-fit">
           <h1 className="text-title text-3xl mt-6">Experiencia Helipuerto</h1>
@@ -49,7 +28,7 @@ const Experiencia = () => {
               className="w-full flex flex-col items-end justify-center md:w-1/2"
               data-aos="slide-right"
             >
-              <Image src={Splatters} alt="splatter" />
+              <Image src="/Splatters1.png" width={200} height={200} alt="splatter" />
             </div>
             <div className="w-full flex flex-col items-center justify-center md:w-1/2 text-content p-8">
               <p>
@@ -80,7 +59,7 @@ const Experiencia = () => {
             className="w-full flex flex-col p-4 gap-2 items-center justify-center md:w-4/12"
             data-aos="fade-in"
           >
-            <Image src={Rango1} width={70} height={200} alt="heli" />
+            <Image src="/img/experiencia/rango1.png" width={70} height={200} alt="heli" />
             <h4 className="text-lg text-title">Cabo</h4>
             <p className="text-sm text-center text-content">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
@@ -92,7 +71,7 @@ const Experiencia = () => {
             className="w-full flex flex-col p-4 gap-2 items-center justify-center md:w-4/12"
             data-aos="fade-in"
           >
-            <Image src={Rango2} width={70} height={200} alt="heli" />
+            <Image src="/img/experiencia/rango2.png" width={70} height={200} alt="heli" />
             <h4 className="text-lg text-title">Cadete</h4>
             <p className="text-sm text-center text-content">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
@@ -104,7 +83,7 @@ const Experiencia = () => {
             className="w-full flex flex-col p-4 gap-2 items-center justify-center md:w-4/12 z-10"
             data-aos="fade-in"
           >
-            <Image src={Rango3} width={70} height={200} alt="heli" />
+            <Image src="/img/experiencia/rango3.png" width={70} height={200} alt="heli" />
             <h4 className="text-lg text-title">Sargento</h4>
             <p className="text-sm text-center text-content">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
@@ -116,7 +95,7 @@ const Experiencia = () => {
             className="w-full flex flex-col p-4 gap-2 items-center justify-center md:w-4/12"
             data-aos="fade-in"
           >
-            <Image src={Rango4} width={70} height={200} alt="heli" />
+            <Image src="/img/experiencia/rango4.png" width={70} height={200} alt="heli" />
             <h4 className="text-lg text-title">Teniente</h4>
             <p className="text-sm text-center text-content">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
@@ -128,7 +107,7 @@ const Experiencia = () => {
             className="w-full flex flex-col p-4 gap-2 items-center justify-center md:w-4/12"
             data-aos="fade-in"
           >
-            <Image src={Especial} width={100} height={200} alt="heli" />
+            <Image src="/img/experiencia/especial.png" width={100} height={200} alt="heli" />
             <h4 className="text-lg text-title">Fuerzas especiales</h4>
             <p className="text-sm text-center text-content">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
@@ -150,7 +129,7 @@ const Experiencia = () => {
             data-aos="fade-in"
             data-aos-delay="1000"
           >
-            <Image src={Register} width={200} height={200} alt="heli" />
+            <Image src="/registered.png" width={200} height={200} alt="heli" />
             <h4 className="text-lg text-title">Alistate Para el combate</h4>
             <p className="text-sm text-center text-content">
               Registra a tus equipo para entrar a la zona de batalla.
@@ -165,7 +144,7 @@ const Experiencia = () => {
             data-aos="fade-in"
             data-aos-delay="2000"
           >
-            <Image src={Comabat} width={200} height={200} alt="heli" />
+            <Image src="/combat.png" width={200} height={200} alt="heli" />
             <h4 className="text-lg text-title">Combate</h4>
             <p className="text-sm text-center text-content">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -181,7 +160,7 @@ const Experiencia = () => {
             data-aos="fade-in"
             data-aos-delay="3000"
           >
-            <Image src={Gold} width={200} height={200} alt="heli" />
+            <Image src="/gold-medal.png" width={200} height={200} alt="heli" />
             <h4 className="text-lg text-title">Disfruta de tu victoria</h4>
             <p className="text-sm text-center text-content">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -202,49 +181,49 @@ const Experiencia = () => {
             className="w-full flex flex-col p-4 gap-2 items-center justify-center md:w-3/12"
             data-aos="zoom-in"
           >
-            <Image src={Img1} alt="heli" />
+            <Image src="/img/experiencia/1.jpg" width={70} height={200} alt="heli" />
           </div>
           <div
             className="w-full flex flex-col p-4 gap-2 items-center justify-center md:w-3/12"
             data-aos="zoom-in"
           >
-            <Image src={Img2} alt="heli" />
+            <Image src="/img/experiencia/2.jpg" width={70} height={200} alt="heli" />
           </div>
           <div
             className="w-full flex flex-col p-4 gap-2 items-center justify-center md:w-3/12"
             data-aos="zoom-in"
           >
-            <Image src={Img3} alt="heli" />
+            <Image src="/img/experiencia/3.jpeg" width={70} height={200} alt="heli" />
           </div>
           <div
             className="w-full flex flex-col p-4 gap-2 items-center justify-center md:w-3/12"
             data-aos="zoom-in"
           >
-            <Image src={Img4} alt="heli" />
+            <Image src="/img/experiencia/4.jpeg" width={70} height={200} alt="heli" />
           </div>
           <div
             className="w-full flex flex-col p-4 gap-2 items-center justify-center md:w-3/12"
             data-aos="zoom-in"
           >
-            <Image src={Img5} alt="heli" />
+            <Image src="/img/experiencia/5.jpeg" width={70} height={200} alt="heli" />
           </div>
           <div
             className="w-full flex flex-col p-4 gap-2 items-center justify-center md:w-3/12"
             data-aos="zoom-in"
           >
-            <Image src={Img6} alt="heli" />
+            <Image src="/img/experiencia/6.jpg" width={70} height={200} alt="heli" />
           </div>
           <div
             className="w-full flex flex-col p-4 gap-2 items-center justify-center md:w-3/12"
             data-aos="zoom-in"
           >
-            <Image src={Img7} alt="heli" />
+            <Image src="/img/experiencia/7.jpg" width={70} height={200} alt="heli" />
           </div>
           <div
             className="w-full flex flex-col p-4 gap-2 items-center justify-center md:w-3/12"
             data-aos="zoom-in"
           >
-            <Image src={Img8} alt="heli" />
+            <Image src="/img/experiencia/8.png" width={70} height={200} alt="heli" />
           </div>
         </div>
       </section>
@@ -260,7 +239,6 @@ const Experiencia = () => {
           </button>
         </div>
       </section>
-      <Footer />
     </>
   );
 };

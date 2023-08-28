@@ -1,11 +1,12 @@
 import Image from "next/image";
 import {
+  SlideImage,
   isImageFitCover,
   isImageSlide,
   useLightboxProps,
 } from "yet-another-react-lightbox";
 
-function isNextJsImage(slide: any) {
+function isNextJsImage<T extends SlideImage>(slide: T) {
   return (
     isImageSlide(slide) &&
     typeof slide.width === "number" &&
