@@ -47,7 +47,7 @@ export default function Page() {
       <Head>
         <title>Helipuerto</title>
       </Head>
-      <section className="min-[320px]:w-full w-screen mx-auto h-screen relative">
+      <section className="min-[320px]:w-full w-screen mx-auto h-screen relative overflow-x-hidden	">
         {/* <div
           className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
@@ -81,7 +81,7 @@ export default function Page() {
         </div>
         {/* </div> */}
       </section>
-      <section className="w-screen px-4 py-8 flex flex-col gap-4 md:flex-row md:px-12 lg:px-24 text-content bg-black">
+      <section className="w-screen px-4 py-8 flex flex-col gap-4 md:flex-row md:px-12 lg:px-24 text-content bg-black overflow-x-hidden">
         <div
           className="w-full flex flex-col justify-center items-end bg-first-card border-2 rounded-md h-56 p-4 md:w-6/12 md:h-[270px]"
           data-aos="slide-right"
@@ -101,7 +101,7 @@ export default function Page() {
           <p>Lun - Vie 08:00 am - 11:00 pm</p>
         </div>
       </section>
-      <section className="w-full px-4 py-8 flex flex-col items-center justify-center gap-2 h-fit bg-black">
+      <section className="w-full px-4 py-8 flex flex-col items-center justify-center gap-2 h-fit bg-black overflow-x-hidden">
         <h3 className="text-2xl text-center text-title">Sobre Nosotros</h3>
         <p className="text-xl text-content">Ven y diviertete con nosotros</p>
         <div className="flex flex-col md:flex-row md:flex-wrap justify-center items-start relative">
@@ -247,7 +247,7 @@ export default function Page() {
       {/* <div className=" w-full">
         <Image src={Cinta} alt="heli" />
       </div> */}
-      <section className="w-screen px-4 img-bg-second h-[460px] bg-black">
+      <section className="w-screen px-4 img-bg-second h-[460px] bg-black overflow-x-hidden">
         <div className="container mx-auto px-4 h-full md:w-full">
           <div className="flex content-center items-center justify-center h-full flex-col">
             <h1 className="text-4xl" data-aos="slide-left">
@@ -289,8 +289,6 @@ export default function Page() {
           </div>
         </div>
       </PureModal> */}
-
-      
     </>
   );
 }

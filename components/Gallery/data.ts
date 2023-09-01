@@ -45,61 +45,61 @@ const galleryTab = [
   // you can add more image if you want
   {
     imageUrl:
-      "https://raw.githubusercontent.com/bl3r3/helipuerto-app/main/pages/services/heli-img/heli1.jpeg",
+      "https://raw.githubusercontent.com/bl3r3/helipuerto-app/main/public/img/heli-img/heli1.jpeg",
     type: "Helipuerto",
     title: "Heli1",
   },
   {
     imageUrl:
-      "https://raw.githubusercontent.com/bl3r3/helipuerto-app/main/pages/services/heli-img/heli2.jpeg",
+      "https://raw.githubusercontent.com/bl3r3/helipuerto-app/main/public/img/heli-img/heli2.jpeg",
     type: "Paintball",
     title: "Heli2",
   },
   {
     imageUrl:
-      "https://raw.githubusercontent.com/bl3r3/helipuerto-app/main/pages/services/heli-img/heli3.jpeg",
+      "https://raw.githubusercontent.com/bl3r3/helipuerto-app/main/public/img/heli-img/heli3.jpeg",
     type: "Nature",
     title: "Beautiful Work",
   },
   {
     imageUrl:
-      "https://raw.githubusercontent.com/bl3r3/helipuerto-app/main/pages/services/heli-img/heli4.jpeg",
+      "https://raw.githubusercontent.com/bl3r3/helipuerto-app/main/public/img/heli-img/heli4.jpeg",
     type: "Nature",
     title: "Beautiful Work",
   },
   {
     imageUrl:
-      "https://raw.githubusercontent.com/bl3r3/helipuerto-app/main/pages/services/heli-img/heli5.jpeg",
+      "https://raw.githubusercontent.com/bl3r3/helipuerto-app/main/public/img/heli-img/heli5.jpeg",
     type: "Nature",
     title: "Beautiful Work",
   },
   {
     imageUrl:
-      "https://raw.githubusercontent.com/bl3r3/helipuerto-app/main/pages/services/heli-img/heli6.jpeg",
+      "https://raw.githubusercontent.com/bl3r3/helipuerto-app/main/public/img/heli-img/heli6.jpeg",
     type: "Nature",
     title: "Beautiful Work",
   },
   {
     imageUrl:
-      "https://raw.githubusercontent.com/bl3r3/helipuerto-app/main/pages/services/heli-img/heli7.jpeg",
+      "https://raw.githubusercontent.com/bl3r3/helipuerto-app/main/public/img/heli-img/heli7.jpeg",
     type: "Nature",
     title: "Beautiful Work",
   },
   {
     imageUrl:
-      "https://raw.githubusercontent.com/bl3r3/helipuerto-app/main/pages/services/heli-img/heli8.jpeg",
+      "https://raw.githubusercontent.com/bl3r3/helipuerto-app/main/public/img/heli-img/heli8.jpeg",
     type: "Nature",
     title: "Beautiful Work",
   },
   {
     imageUrl:
-      "https://raw.githubusercontent.com/bl3r3/helipuerto-app/main/pages/services/heli-img/heli9.jpeg",
+      "https://raw.githubusercontent.com/bl3r3/helipuerto-app/main/public/img/heli-img/heli9.jpeg",
     type: "Nature",
     title: "Beautiful Work",
   },
   {
     imageUrl:
-      "https://raw.githubusercontent.com/bl3r3/helipuerto-app/main/pages/services/heli-img/heli10.jpeg",
+      "https://raw.githubusercontent.com/bl3r3/helipuerto-app/main/public/img/heli-img/heli10.jpeg",
     type: "Nature",
     title: "Beautiful Work",
   },
@@ -107,6 +107,6 @@ const galleryTab = [
 
 export const slidesTest = galleryTab.map((item) => ({
   src: item.imageUrl,
-  width: 1080,
+  width: 1920,
   height: 1080,
 }));
