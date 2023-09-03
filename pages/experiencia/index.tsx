@@ -17,7 +17,7 @@ const Experiencia = () => {
       <Head>
         <title>Experiencia | Helipuerto</title>
       </Head>
-      <section className="w-full px-4 h-fit pt-20">
+      <section className="w-full px-4 h-fit pt-20 overflow-x-hidden">
         <div className="w-full flex flex-col items-center justify-center gap-2 h-fit">
           <h1 className="text-title text-3xl mt-6">Experiencia Helipuerto</h1>
           <p className="text-content">
@@ -28,7 +28,12 @@ const Experiencia = () => {
               className="w-full flex flex-col items-end justify-center md:w-1/2"
               data-aos="slide-right"
             >
-              <Image src="/Splatters1.png" width={200} height={200} alt="splatter" />
+              <Image
+                src="/Splatters1.png"
+                width={200}
+                height={200}
+                alt="splatter"
+              />
             </div>
             <div className="w-full flex flex-col items-center justify-center md:w-1/2 text-content p-8">
               <p>
@@ -47,7 +52,7 @@ const Experiencia = () => {
           </div>
         </div>
       </section>
-      <section className="w-full px-4 py-8 flex flex-col items-center justify-center gap-2 h-fit bg-black">
+      <section className="w-full px-4 py-8 flex flex-col items-center justify-center gap-2 h-fit bg-black overflow-x-hidden">
         <h3 className="text-2xl text-center text-title">
           Experiencia HELITeam
         </h3>
@@ -59,7 +64,12 @@ const Experiencia = () => {
             className="w-full flex flex-col p-4 gap-2 items-center justify-center md:w-4/12"
             data-aos="fade-in"
           >
-            <Image src="/img/experiencia/rango1.png" width={70} height={200} alt="heli" />
+            <Image
+              src="/img/experiencia/rango1.png"
+              width={70}
+              height={200}
+              alt="heli"
+            />
             <h4 className="text-lg text-title">Cabo</h4>
             <p className="text-sm text-center text-content">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
@@ -71,7 +81,12 @@ const Experiencia = () => {
             className="w-full flex flex-col p-4 gap-2 items-center justify-center md:w-4/12"
             data-aos="fade-in"
           >
-            <Image src="/img/experiencia/rango2.png" width={70} height={200} alt="heli" />
+            <Image
+              src="/img/experiencia/rango2.png"
+              width={70}
+              height={200}
+              alt="heli"
+            />
             <h4 className="text-lg text-title">Cadete</h4>
             <p className="text-sm text-center text-content">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
@@ -83,7 +98,12 @@ const Experiencia = () => {
             className="w-full flex flex-col p-4 gap-2 items-center justify-center md:w-4/12 z-10"
             data-aos="fade-in"
           >
-            <Image src="/img/experiencia/rango3.png" width={70} height={200} alt="heli" />
+            <Image
+              src="/img/experiencia/rango3.png"
+              width={70}
+              height={200}
+              alt="heli"
+            />
             <h4 className="text-lg text-title">Sargento</h4>
             <p className="text-sm text-center text-content">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
@@ -95,7 +115,12 @@ const Experiencia = () => {
             className="w-full flex flex-col p-4 gap-2 items-center justify-center md:w-4/12"
             data-aos="fade-in"
           >
-            <Image src="/img/experiencia/rango4.png" width={70} height={200} alt="heli" />
+            <Image
+              src="/img/experiencia/rango4.png"
+              width={70}
+              height={200}
+              alt="heli"
+            />
             <h4 className="text-lg text-title">Teniente</h4>
             <p className="text-sm text-center text-content">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
@@ -107,7 +132,12 @@ const Experiencia = () => {
             className="w-full flex flex-col p-4 gap-2 items-center justify-center md:w-4/12"
             data-aos="fade-in"
           >
-            <Image src="/img/experiencia/especial.png" width={100} height={200} alt="heli" />
+            <Image
+              src="/img/experiencia/especial.png"
+              width={100}
+              height={200}
+              alt="heli"
+            />
             <h4 className="text-lg text-title">Fuerzas especiales</h4>
             <p className="text-sm text-center text-content">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
@@ -173,7 +203,7 @@ const Experiencia = () => {
           </div>
         </div>
       </section>
-      <section className="w-full px-4 py-8 flex flex-col items-center justify-center gap-2  h-fit ">
+      <section className="w-full px-4 py-8 flex flex-col items-center justify-center gap-2  h-fit overflow-x-hidden">
         <h3 className="text-2xl text-center text-title">Fotos y Videos</h3>
         <p className="text-content">Disfruta de nuestra galeria</p>
         <div className="flex flex-col md:flex-row md:flex-wrap">
@@ -181,49 +211,89 @@ const Experiencia = () => {
             className="w-full flex flex-col p-4 gap-2 items-center justify-center md:w-3/12"
             data-aos="zoom-in"
           >
-            <Image src="/img/experiencia/1.jpg" width={70} height={200} alt="heli" />
+            <Image
+              src="/img/experiencia/1.jpg"
+              width={70}
+              height={200}
+              alt="heli"
+            />
           </div>
           <div
             className="w-full flex flex-col p-4 gap-2 items-center justify-center md:w-3/12"
             data-aos="zoom-in"
           >
-            <Image src="/img/experiencia/2.jpg" width={70} height={200} alt="heli" />
+            <Image
+              src="/img/experiencia/2.jpg"
+              width={70}
+              height={200}
+              alt="heli"
+            />
           </div>
           <div
             className="w-full flex flex-col p-4 gap-2 items-center justify-center md:w-3/12"
             data-aos="zoom-in"
           >
-            <Image src="/img/experiencia/3.jpeg" width={70} height={200} alt="heli" />
+            <Image
+              src="/img/experiencia/3.jpeg"
+              width={70}
+              height={200}
+              alt="heli"
+            />
           </div>
           <div
             className="w-full flex flex-col p-4 gap-2 items-center justify-center md:w-3/12"
             data-aos="zoom-in"
           >
-            <Image src="/img/experiencia/4.jpeg" width={70} height={200} alt="heli" />
+            <Image
+              src="/img/experiencia/4.jpeg"
+              width={70}
+              height={200}
+              alt="heli"
+            />
           </div>
           <div
             className="w-full flex flex-col p-4 gap-2 items-center justify-center md:w-3/12"
             data-aos="zoom-in"
           >
-            <Image src="/img/experiencia/5.jpeg" width={70} height={200} alt="heli" />
+            <Image
+              src="/img/experiencia/5.jpeg"
+              width={70}
+              height={200}
+              alt="heli"
+            />
           </div>
           <div
             className="w-full flex flex-col p-4 gap-2 items-center justify-center md:w-3/12"
             data-aos="zoom-in"
           >
-            <Image src="/img/experiencia/6.jpg" width={70} height={200} alt="heli" />
+            <Image
+              src="/img/experiencia/6.jpg"
+              width={70}
+              height={200}
+              alt="heli"
+            />
           </div>
           <div
             className="w-full flex flex-col p-4 gap-2 items-center justify-center md:w-3/12"
             data-aos="zoom-in"
           >
-            <Image src="/img/experiencia/7.jpg" width={70} height={200} alt="heli" />
+            <Image
+              src="/img/experiencia/7.jpg"
+              width={70}
+              height={200}
+              alt="heli"
+            />
           </div>
           <div
             className="w-full flex flex-col p-4 gap-2 items-center justify-center md:w-3/12"
             data-aos="zoom-in"
           >
-            <Image src="/img/experiencia/8.png" width={70} height={200} alt="heli" />
+            <Image
+              src="/img/experiencia/8.png"
+              width={70}
+              height={200}
+              alt="heli"
+            />
           </div>
         </div>
       </section>

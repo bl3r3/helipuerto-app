@@ -8,11 +8,11 @@ const Footer = () => {
     <footer className="bg-black">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
-          <div className="mb-6 md:mb-0 w-1/2">
+          <div className="mb-6 md:mb-0 md:w-1/2 w-full">
             <Link href="https://flowbite.com/" className="flex items-center">
               <Image
                 src={LogoFooter}
-                className="h-40 max-w-20 mr-3 object-cover"
+                className="h-40 max-w-20 mr-3 object-contain"
                 alt="FlowBite Logo"
               />
             </Link>

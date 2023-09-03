@@ -15,7 +15,6 @@ import {
 import Head from "next/head";
 
 const Services = () => {
-  
   useEffect(() => {
     AOS.init({
       duration: 1500,
@@ -28,7 +27,7 @@ const Services = () => {
         <title>Componentes | Helipuerto</title>
       </Head>
       <section className="w-full px-4 h-fit pt-20">
-        <div className="w-full flex flex-col items-center justify-center gap-2 h-fit">
+        <div className="w-full flex flex-col items-center justify-center gap-2 h-fit overflow-x-hidden">
           <h1 className="text-title text-3xl mt-8">Nuestros Componentes</h1>
           <p className="text-content">
             Consulta por nuestros servicios y por nuestras diferentes zonas
@@ -38,7 +37,12 @@ const Services = () => {
               className="w-full flex flex-col items-end justify-center md:w-1/2"
               data-aos="slide-right"
             >
-              <Image src="/Splatters2.png" width={200} height={200} alt="splatter" />
+              <Image
+                src="/Splatters2.png"
+                width={500}
+                height={500}
+                alt="splatter"
+              />
             </div>
             <div className="w-full flex flex-col gap-2 items-center justify-center md:w-1/2 text-content p-8">
               <p>
@@ -158,12 +162,28 @@ const Services = () => {
           </button>
         </div>
       </section> */}
-      <section className="w-full bg-black px-4 py-8 flex flex-col items-center justify-center gap-2 h-fit relative">
-        <div className="absolute top-0 right-10 w-48" data-aos="slide-left">
-          <Image src="/img/7496-removebg-preview.png" width={200} height={200} alt="some" />
+      <section className="w-full bg-black px-4 py-8 flex flex-col items-center justify-center gap-2 h-fit relative overflow-x-hidden">
+        <div
+          className="absolute top-12 md:top-0 right-0 md:right-10 md:w-48 w-16"
+          data-aos="slide-left"
+        >
+          <Image
+            src="/img/7496-removebg-preview.png"
+            width={200}
+            height={200}
+            alt="some"
+          />
         </div>
-        <div className="absolute top-0 left-10 w-48" data-aos="slide-right">
-          <Image src="/img/7496-removebg-preview.png" width={200} height={200} alt="some" />
+        <div
+          className="absolute top-12 md:top-0 left-0 md:left-10 md:w-48 w-16"
+          data-aos="slide-right"
+        >
+          <Image
+            src="/img/7496-removebg-preview.png"
+            width={200}
+            height={200}
+            alt="some"
+          />
         </div>
         <h3 className="text-2xl text-center text-title mt-8">
           Zonas de Combate
